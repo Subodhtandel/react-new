@@ -1,14 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
-return<>
-<h1>todo app</h1>
-<create addtask=() => {
-  // Implementation for adding a new task
-}>add task</create>
+import Footer from "./components/Footer"
+import Header from "./components/Header"
+import { Abc, Xyz } from "./components/Content"
 
-</>
+
+const App = () => {
+
+  const name = "subodh"
+  return <>
+    <Header name={name} age={21} />
+    <Abc />
+    <Xyz />
+    <Footer name={name} age={21} />
+  </>
+
+}
+
 
 export default App
