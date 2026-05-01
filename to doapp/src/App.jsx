@@ -12,7 +12,7 @@ function App() {
   }
 
   const removetask = (data) => {
-    var newarray = task.filter(ele => ele !== data)
+    var newarray = task.filter(ele => { return ele !== data })
     settask(newarray)
   }
 
